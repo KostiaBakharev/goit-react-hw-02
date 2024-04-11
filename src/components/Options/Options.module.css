@@ -6,6 +6,8 @@
 }
 
 .button {
+  text-transform: capitalize;
+
   padding: 15px 25px;
   font-size: 18px;
   font-weight: 700;
@@ -21,15 +23,15 @@
   filter: brightness(75%);
 }
 
-.Good {
+.good {
   background-color: #5ddb64;
 }
 
-.Bad {
+.bad {
   background-color: rgb(219, 81, 81);
 }
 
-.Neutral {
+.neutral {
   background-color: #ffc107;
 }
 

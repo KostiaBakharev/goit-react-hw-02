@@ -13,9 +13,9 @@ const App = () => {
       return JSON.parse(savedFeedback);
     }
     return {
-      Good: 0,
-      Bad: 0,
-      Neutral: 0,
+      good: 0,
+      bad: 0,
+      neutral: 0,
     };
   });
 
@@ -37,18 +37,18 @@ const App = () => {
   // Скидання відгуків
   const handleReset = () => {
     setFeedback({
-      Good: 0,
-      Bad: 0,
-      Neutral: 0,
+      good: 0,
+      bad: 0,
+      neutral: 0,
     });
   };
-  const { Good, Bad, Neutral } = feedback;
+  const { good, bad, neutral } = feedback;
   // Обчислення загальної кількості відгуків
-  const totalFeedback = Good + Bad + Neutral;
+  const totalFeedback = good + bad + neutral;
 
   // Обчислення відсотка позитивних відгуків
   const positivePercentage =
-    totalFeedback === 0 ? 0 : ((Good / totalFeedback) * 100).toFixed(2);
+    totalFeedback === 0 ? 0 : ((good / totalFeedback) * 100).toFixed(2);
 
   return (
     <div className="container">
@@ -63,9 +63,9 @@ const App = () => {
         <Notification message="There is no feedback yet." />
       ) : (
         <Feedback
-          good={Good}
-          bad={Bad}
-          neutral={Neutral}
+          good={good}
+          bad={bad}
+          neutral={neutral}
           total={totalFeedback}
           positivePercentage={positivePercentage}
         />
