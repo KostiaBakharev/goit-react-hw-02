@@ -1,0 +1,38 @@
+.wrap {
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+  gap: 40px;
+}
+
+.button {
+  padding: 15px 25px;
+  font-size: 18px;
+  font-weight: 700;
+  cursor: pointer;
+  color: black;
+  border: none;
+  border-radius: 5px;
+  transition: filter 0.3s;
+  box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.button:hover {
+  filter: brightness(75%);
+}
+
+.Good {
+  background-color: #5ddb64;
+}
+
+.Bad {
+  background-color: rgb(219, 81, 81);
+}
+
+.Neutral {
+  background-color: #ffc107;
+}
+
+.reset {
+  background-color: grey;
+}
